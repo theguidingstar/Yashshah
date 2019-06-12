@@ -15,3 +15,22 @@
     height: 100px;
     margin-top: 45px;
 }
+.header {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 50px;
+    font-weight: 1000;
+    font-family: sans-serif;
+    color: lightslategray;
+}
+.icon:hover {
+    opacity: 0.1;
+    background: lightgray;
+    z-index: 999;
+}
+.circle:hover {
+    opacity: 0.1;
+    background: darkslategrey;
+    z-index: 1000;
+}
+	
