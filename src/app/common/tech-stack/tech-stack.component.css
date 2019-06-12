@@ -1,0 +1,17 @@
+.circle {
+    width: 200px;
+    height: 200px;
+    background: white;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    display:table-cell; 
+    vertical-align:middle;
+    text-align:center;
+    margin: auto !important;
+}
+.icon {
+    width: 100px;
+    height: 100px;
+    margin-top: 45px;
+}
