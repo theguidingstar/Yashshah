@@ -1,0 +1,106 @@
+.intro-main {
+    width: 100%;
+    height: 60%;
+}
+
+.skill-main {
+    width: 100%;
+    height: 40%;
+}
+
+.intro-card, .skill-card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .intro-card:hover, .skill-card :hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  .intro-card, .skill-card {
+      display: flex;
+      margin-left: 240px;
+      margin-right: 240px;
+      height: 100%;
+      margin-top: 140px;
+      margin-bottom: 40px;
+      background: rgb(83, 86, 93);;
+  }
+  .container{
+    width: 110px;
+    height: 110px;
+    margin: 100px auto;
+}
+.prec{
+    top: 30px;
+    position: relative;
+    font-size: 30px;
+}
+
+.circle{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #E6F4F7;
+}
+
+.active-border{
+    position: relative;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+
+    background-color:#39B4CC;
+    background-image:
+        linear-gradient(91deg, transparent 50%, #A2ECFB 50%),
+        linear-gradient(90deg, #A2ECFB 50%, transparent 50%);
+    
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    background: white;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    display:table-cell; 
+    vertical-align:middle;
+    text-align:center;
+    margin: auto !important;
+}
+.icon {
+    width: 100px;
+    height: 100px;
+    margin-top: 45px;
+}
+.header {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 50px;
+    font-weight: 1000;
+    font-family: sans-serif;
+    color: lightslategray;
+}
+/* .icon:hover {
+    opacity: 0.1;
+    background: lightgray;
+    z-index: 999;
+}
+.circle:hover {
+    opacity: 0.1;
+    background: darkslategrey;
+    z-index: 1000;
+} */
+	
