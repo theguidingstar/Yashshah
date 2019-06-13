@@ -6,26 +6,37 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
   styleUrls: ['./main-frame.component.css']
 })
 export class MainFrameComponent implements OnInit, AfterViewInit {
-  public displaySideMenu: Boolean = true;
+  public displaySideMenu: Boolean = false;
   public canvas: any;
+  public particle: any;
   constructor() { }
 
   ngOnInit() {
-
   }
 
   ngAfterViewInit() {
-    this.setSideMenu();
+    const sideMenuIcon = document.getElementsByClassName('side-menu-pop-up')[0];
+    sideMenuIcon.addEventListener('click', () => {
+
+    });
+    window.addEventListener('click', (event) => {
+      if (event.srcElement.className === 'side-menu-pop-up') {
+        this.displaySideMenu = true;
+        this.particle = document.getElementsByClassName('particles')[0] as HTMLElement;
+        this.particle.style.marginLeft = '54px';
+      } else {
+        if (event) {
+          this.displaySideMenu = false;
+          this.particle.style.marginLeft = '-88px';
+        }
+      }
+    });
   }
 
-  public setSideMenu(): void {
-    this.canvas = document.getElementsByClassName('pg-canvas')[0] as HTMLElement;
-    if (this.canvas) {
-      const sideMenuOpen = document.getElementsByClassName('side-menu-pop-up')[0] as HTMLElement;
-    sideMenuOpen.style.marginTop = '-' +  + 'px';
-    } else {
-      this.setSideMenu();
+  public hideSideMenu(event: any): void {
+    if (event) {
+      this.displaySideMenu = false;
+      this.particle.style.marginLeft = '-88px';
     }
   }
-
 }

@@ -180,3 +180,13 @@ p {
     height: 4px;
   }
 }
+
+.side-menu-pop-up {
+  margin: 30px;
+  z-index: 1000;
+}
+
+.particles {
+  margin-left: -88px;
+  z-index: 999;
+}

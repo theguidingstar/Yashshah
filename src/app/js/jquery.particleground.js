@@ -100,7 +100,7 @@
        */
       function styleCanvas() {
         canvas.width =screen.width;
-        canvas.height = screen.height;
+        canvas.height = document.documentElement.clientHeight;
         ctx.fillStyle = options.dotColor;
         ctx.strokeStyle = options.lineColor;
         ctx.lineWidth = options.lineWidth;

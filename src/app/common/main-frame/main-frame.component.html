@@ -1,7 +1,7 @@
 <div style="display: flex;">
-<app-side-menu *ngIf="displaySideMenu"></app-side-menu>
-<div id="particles">
-    <img class="side-menu-pop-up" src="../../../assets/Hamburger_icon.svg.png" style="height: 50px; width: 50px;">
+<app-side-menu *ngIf="displaySideMenu" (HideSideMenu)="hideSideMenu($event);"></app-side-menu>
+<img *ngIf="!displaySideMenu" class="side-menu-pop-up" src="../../../assets/Hamburger_icon.svg.png" style="height: 30px; width: 30px;">
+<div id="particles" class="particles">
   <div id="intro">
     <h1>Yash Shah</h1>
     <p>Developer  |   Designer   |  Blogger </p>
