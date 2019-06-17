@@ -24,14 +24,20 @@
     padding: 2px 16px;
   }
 
+  hr {
+    background-color: lightgray;
+    border: 0 none;
+    color: #eee;
+    height: 1px;
+}
+
   .intro-card, .skill-card {
       display: flex;
-      margin-left: 240px;
-      margin-right: 240px;
-      height: 100%;
-      margin-top: 140px;
+      margin-left: 340px;
+      margin-right: 340px;
+      height: 300px;
       margin-bottom: 40px;
-      background: rgb(83, 86, 93);;
+      background: rgb(83, 86, 93);
   }
   .container{
     width: 110px;
